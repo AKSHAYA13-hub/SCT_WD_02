@@ -43,3 +43,7 @@ icons.png
 
 
 
+⚡ How to Install
+Open the app in Chrome/Edge mobile browser
+
+Click Install App (browser prompt) or Add to Home Screen
