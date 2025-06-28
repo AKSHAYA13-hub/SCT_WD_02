@@ -21,8 +21,8 @@ This is a responsive and interactive stopwatch web application developed as part
 
 
 ## 📲 Live Demo
-👉 [View the Stopwatch App](https://akshaya13-hub.github.io/SCT_WD_02/)  
-*(Note: Replace with your actual link once Pages is working!)*  
+👉 https://akshaya13-hub.github.io/SCT_WD_02/ 
+  
 
 
 ## 📌 How to Use
