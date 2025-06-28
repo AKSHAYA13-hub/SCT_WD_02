@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="512x512" href="icons.png">
+  <title>Stopwatch App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="stopwatch">
+    <div class="top-bar">
+      <h1>Stopwatch</h1>
+      <button id="modeToggle" aria-label="Toggle dark or light mode">🌙</button>
+    </div>
+
+    <div class="circle-container">
+      <svg width="150" height="150">
+        <circle cx="75" cy="75" r="70" stroke="#eee" stroke-width="10" fill="none"></circle>
+        <circle id="progress" cx="75" cy="75" r="70" stroke="#00796b" stroke-width="10" fill="none" stroke-linecap="round" transform="rotate(-90 75 75)" stroke-dasharray="440" stroke-dashoffset="440"></circle>
+      </svg>
+      <div class="time" id="display">00:00:00.000</div>
+    </div>
+
+    <div class="buttons">
+      <button id="startBtn" class="start" aria-label="Start stopwatch">Start</button>
+      <button id="pauseBtn" class="pause" aria-label="Pause stopwatch">Pause</button>
+      <button id="resetBtn" class="reset" aria-label="Reset stopwatch">Reset</button>
+    </div>
+
+    <div class="buttons">
+      <button id="lapBtn" class="lap" aria-label="Record lap time">Lap</button>
+      <button id="splitBtn" class="split" aria-label="Record split time">Split</button>
+    </div>
+
+    <h3>Laps</h3>
+    <ul id="laps"></ul>
+
+    <h3>Splits</h3>
+    <ul id="splits"></ul>
+
+    <button id="exportBtn" class="download" aria-label="Download lap times">📥 Download Laps</button>
+
+    <audio id="beep" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
